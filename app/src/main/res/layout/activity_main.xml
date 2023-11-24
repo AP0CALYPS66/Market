@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="DNS"
+        android:fontFamily="sans-serif-light"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Товары"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Мышь Bloody"
+        />
+    <CheckBox
+        android:layout_weight="1"
+        android:id="@+id/cb2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Клавиатура Dexp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Наушники с подсветкой"
+            />
+        <CheckBox
+            android:layout_weight="1"
+            android:id="@+id/cb4"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="TN монитор"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <CheckBox
+            android:id="@+id/cb5"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Компьютер с I3 за 100000"
+            />
+        <CheckBox
+            android:layout_weight="1"
+            android:id="@+id/cb6"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="1050TI"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Способы доставки"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        ></TextView>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/r1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Курьер"/>
+        <RadioButton android:id="@+id/r2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Почта"/>
+        <RadioButton android:id="@+id/r3"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Самовывоз"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/ET"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="30sp"
+        android:hint="Комментарий к заказу"
+        ></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="65dp"
+        android:text="Заказать"
+        android:textSize="20sp"
+        ></Button>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="65dp"
+            android:text="Очистить"
+            android:textSize="20sp"
+            ></Button>
+        ></LinearLayout>
+</LinearLayout>
